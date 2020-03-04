@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+$(document).ready(function($) {
 	$('.slider').unslider({
 		animation:'fade',
 		autoplay:true,
@@ -18,13 +18,13 @@ $(document).ready(function( ){
 	});
 });
 
-function setEqualHeight(columns) { 
-	var tallestcolumn = 0; 
-	columns.each( function() { 
-		currentHeight = $(this).height(); 
-		if(currentHeight > tallestcolumn) { tallestcolumn = currentHeight; } } ); 
-		columns.height(tallestcolumn); 
-	} 
+function setEqualHeight(columns) {
+	var tallestcolumn = 0;
+	columns.each( function() {
+		currentHeight = $(this).height();
+		if(currentHeight > tallestcolumn) { tallestcolumn = currentHeight; } } );
+		columns.height(tallestcolumn);
+	}
 $(document).ready(function() { setEqualHeight($(".item h3")); });
 
 $(document).ready(function(){
