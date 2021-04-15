@@ -26,12 +26,12 @@ input:focus::placeholder{
 	color:transparent;
 }
 body{
-	background: #000000;
+	background: #fff;
 	color: #5c5c5c;
 	font-family: 'Helvetica', sans-serif;
-	text-align: top;
-	line-height: 1;
-	min-width: 3px;
+	text-align: left;
+	line-height: 1.5;
+	min-width: 320px;
 }
 .clearfix:after {
     clear: both;
