@@ -1,0 +1,106 @@
+*{
+  box-sizing: border-box;
+}
+.cards{
+
+  &-list{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  &-item{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px 0;
+    width: 48%;
+
+  }
+
+  &-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    background-color: #d7f3f0;
+    height: 445px;
+
+    img{
+      height: auto;
+    }
+  }
+
+  &-descr{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #ECECEC;
+    border-radius: 0 0 3px 3px;
+    padding: 18px 18px 26px;
+    height: 100%;
+
+    &-category{
+      margin-bottom: 5px;
+      padding: 5px 10px;
+      background: #ECECEC;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    &-title{
+      line-height: 1.2;
+      font-weight: 700;
+      margin-bottom: 8px;
+      font-size: 24px;
+      flex-grow: 1;
+      word-break: break-word;
+    }
+
+    &-author{
+      margin-bottom: 5px;
+      font-weight: 300;
+      font-size: 14px;
+    }
+
+    &-info{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      &-price{
+        font-size: 30px;
+
+        span{
+          font-size: 15px;
+          margin-left: 5px;
+        }
+
+      }
+
+      &-btn{
+
+        button{
+          width: 134px;
+          height: 35px;
+          color: #fff;
+          text-transform: uppercase;
+          background: #58AD1E;
+          border: none;
+          border-radius: 3px;
+        }
+
+      }
+    }
+  }
+
+}
+
+.fa-shopify{
+
+  &::before{
+    content: '\e057';
+    font-family: "Font Awesome 5 Free";
+  }
+}
